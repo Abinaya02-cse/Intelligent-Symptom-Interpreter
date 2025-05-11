@@ -1,81 +1,128 @@
-**🧠 Intelligent Symptom Interpretation System**
-**📄 Project Abstract**
-The Intelligent Symptom Interpretation System is a healthcare-focused chatbot designed to bridge the gap between informal patient symptom descriptions and medically recognized conditions. Many patients express their symptoms using vague or non-clinical language, making it difficult for automated systems to interpret their health concerns accurately. This project leverages Natural Language Processing (NLP) techniques to clean and parse user input, identify key medical symptoms using Named Entity Recognition (NER), and map those symptoms to probable conditions through an ontology-based approach. The chatbot then provides a human-readable response suggesting possible conditions and encourages users to consult healthcare professionals. This system demonstrates a practical application of NLP in health informatics, enabling better triaging and digital symptom checking in clinical environments.
 
-**📘 Project Overview****
-The Intelligent Symptom Interpretation System is a chatbot designed for healthcare settings that interprets vague or indirect symptom descriptions from patients and maps them to probable medical conditions. This is especially useful in hospitals where patients may describe symptoms like “I feel dizzy when I get up” instead of using clinical terminology.
 
-**🎯 Objectives**
-Interpret vague, non-clinical symptom inputs from users.
-Use NLP for preprocessing and Named Entity Recognition (NER).
-Map identified symptoms to medical conditions using a simple ontology.
-Provide a chatbot-style interface with helpful responses.
+## 🧠 Intelligent Symptom Interpretation System
 
-**🧩 Components**
-Module	Function
-app.py	Main chatbot loop
-preprocessing.py	Cleans and lemmatizes input
-ner_module.py	Extracts medical-related symptoms
-ontology_mapper.py	Maps symptoms to probable conditions
-chatbot_response.py	Generates user-facing replies
-🗃 Example Input & Output
-User Input:
+The **Intelligent Symptom Interpretation System** is a healthcare-focused chatbot designed to bridge the gap between informal symptom descriptions and medically recognized conditions. It uses NLP techniques to interpret vague user input, extract symptoms using Named Entity Recognition (NER), and map those symptoms to likely medical conditions through an ontology-driven process.
 
-I feel lightheaded sometimes, and my legs feel weak after walking.
+---
 
-Chatbot Output:
+## 📄 Project Abstract
 
-Based on your symptoms (lightheadedness, leg weakness), you might be experiencing one of the following conditions: Anemia, Orthostatic Hypotension, Peripheral Neuropathy, Multiple Sclerosis. Please consult a healthcare professional for an accurate diagnosis.
+Many patients describe symptoms using non-clinical language like “I feel dizzy when I get up,” making it hard for automated systems to understand. This system applies NLP to:
+- Preprocess and clean user input,
+- Identify symptoms via NER,
+- Map symptoms to probable conditions using an ontology,
+- And respond with health-related suggestions in natural language.
 
-Screenshot of the Chatbot Output: Chatbot Output Example
+This project showcases a practical application of NLP in health informatics and can be adapted for digital triage or symptom-checking interfaces.
 
-🛠 How to Run (Windows, macOS, Linux)
-**✅ Prerequisites**
-Python 3.8+
-spaCy and English language model
-🖥 Installation Steps (Windows)
-Install Python (if not already installed) from python.org.
-Open Command Prompt (press Win + R, type cmd, and press Enter).
-Install required packages:
-pip install -r requirements.txt
-python -m spacy download en_core_web_sm
-Run the Chatbot:
-python app.py
-🍏 Installation Steps (macOS)
-Install Python (if not already installed) from python.org.
-Open Terminal (press Cmd + Space, type Terminal, and press Enter).
-Install required packages:
-pip install -r requirements.txt
-python -m spacy download en_core_web_sm
-Run the Chatbot:
-python app.py
-🐧 Installation Steps (Linux)
-Install Python (if not already installed) from python.org.
+---
+
+## 📘 Project Overview
+
+- Understands vague or non-clinical symptom expressions.
+- Built for use in hospitals and healthcare triage systems.
+- Interprets symptoms using a rule-based NER system.
+- Maps symptoms to medical conditions via a predefined ontology.
+- Offers a chatbot-style interaction interface.
+
+---
+
+## 🎯 Objectives
+
+- 🧾 Interpret vague symptom descriptions.
+- 🧹 Use NLP to clean and tokenize text.
+- 🔍 Apply rule-based NER to extract symptoms.
+- 🗺 Map symptoms to conditions using an ontology.
+- 💬 Generate clear, human-readable chatbot responses.
+
+---
+
+## 🧩 Components
+
+| Module              | Function                                 |
+|---------------------|------------------------------------------|
+| `app.py`            | Main chatbot loop                        |
+| `preprocessing.py`  | Text cleaning and lemmatization using spaCy |
+| `ner_module.py`     | Rule-based medical symptom extraction    |
+| `ontology_mapper.py`| Maps symptoms to probable conditions     |
+| `chatbot_response.py` | Generates chatbot replies               |
+
+---
+
+## 🗃 Example Input & Output
+
+![Screenshot 2025-05-11 162112](https://github.com/user-attachments/assets/906d786a-90f7-4307-90ac-3152800afdd6)
+
+---
+
+## 🛠 How to Run the Project
+
+### ✅ Prerequisites
+- Python 3.8+
+- `spaCy` and the English NLP model (`en_core_web_sm`)
+
+---
+
+### 💻 Installation Instructions
+
+#### 🖥 Windows
+
+1. Install Python from [python.org](https://www.python.org/).
+2. Open **Command Prompt**.
+3. Run:
+   ```bash
+   pip install -r requirements.txt
+   python -m spacy download en_core_web_sm
+   python app.py
+🍏 macOS
+Install Python.
+
 Open Terminal.
-Install required packages:
-pip install -r requirements.txt
+
+Run:pip install -r requirements.txt
 python -m spacy download en_core_web_sm
-Run the Chatbot:
+python app.py
+🐧 Linux
+Ensure Python is installed.
+
+Open Terminal.
+
+Run:pip install -r requirements.txt
+python -m spacy download en_core_web_sm
 python app.py
 
-**📂 Files Included**
-app.py – Main chatbot script
-preprocessing.py – Input cleaner
-ner_module.py – Extracts symptoms
-ontology_mapper.py – Symptom-condition mapping
-chatbot_response.py – Response builder
-requirements.txt – Python dependencies
-README.md – This file
-🎞 Presentation Slides
-You can view the project presentation here: Intelligent_Symptom_Interpretation_System.pptx
+📂 Project Files
+app.py – Main script to run the chatbot
 
-**🧠 Future Improvements**
-Real medical NER using SciSpacy or Med7
-Use SNOMED or ICD-10 for advanced ontology mapping
-Deep learning model for better context understanding
-Web-based interface
+preprocessing.py – Text preprocessing using spaCy
+
+ner_module.py – Extracts key medical symptoms
+
+ontology_mapper.py – Maps symptoms to medical conditions
+
+chatbot_response.py – Builds final chatbot replies
+
+requirements.txt – Project dependencies
+
+README.md – Project documentation
+
+🎞 Presentation Slides
+📽 View Presentation Slides (Intelligent_Symptom_Interpretation_System.pptx)
+
+🧠 Future Improvements
+Integrate medical NER using SciSpacy or Med7
+
+Use real-world ontologies like SNOMED CT or ICD-10
+
+Apply deep learning for improved language understanding
+
+Develop a web-based UI using Flask or Streamlit
+
 👨‍⚕️ Disclaimer
-This tool is not a diagnostic system. It is an academic project for demonstration purposes only. Always consult a healthcare professional for medical advice.
+This chatbot is not a diagnostic tool. It is intended solely for educational and demonstration purposes. Always consult a qualified healthcare provider for medical advice.
 
 📜 License
-MIT License (for academic use)
+MIT License – For academic and non-commercial use.
+
+
