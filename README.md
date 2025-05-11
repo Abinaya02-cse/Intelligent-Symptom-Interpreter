@@ -1,16 +1,17 @@
-🧠 Intelligent Symptom Interpretation System
-📄 Project Abstract
+**🧠 Intelligent Symptom Interpretation System**
+**📄 Project Abstract**
 The Intelligent Symptom Interpretation System is a healthcare-focused chatbot designed to bridge the gap between informal patient symptom descriptions and medically recognized conditions. Many patients express their symptoms using vague or non-clinical language, making it difficult for automated systems to interpret their health concerns accurately. This project leverages Natural Language Processing (NLP) techniques to clean and parse user input, identify key medical symptoms using Named Entity Recognition (NER), and map those symptoms to probable conditions through an ontology-based approach. The chatbot then provides a human-readable response suggesting possible conditions and encourages users to consult healthcare professionals. This system demonstrates a practical application of NLP in health informatics, enabling better triaging and digital symptom checking in clinical environments.
 
-📘 Project Overview
+**📘 Project Overview****
 The Intelligent Symptom Interpretation System is a chatbot designed for healthcare settings that interprets vague or indirect symptom descriptions from patients and maps them to probable medical conditions. This is especially useful in hospitals where patients may describe symptoms like “I feel dizzy when I get up” instead of using clinical terminology.
 
-🎯 Objectives
+**🎯 Objectives**
 Interpret vague, non-clinical symptom inputs from users.
 Use NLP for preprocessing and Named Entity Recognition (NER).
 Map identified symptoms to medical conditions using a simple ontology.
 Provide a chatbot-style interface with helpful responses.
-🧩 Components
+
+**🧩 Components**
 Module	Function
 app.py	Main chatbot loop
 preprocessing.py	Cleans and lemmatizes input
@@ -29,7 +30,7 @@ Based on your symptoms (lightheadedness, leg weakness), you might be experiencin
 Screenshot of the Chatbot Output: Chatbot Output Example
 
 🛠 How to Run (Windows, macOS, Linux)
-✅ Prerequisites
+**✅ Prerequisites**
 Python 3.8+
 spaCy and English language model
 🖥 Installation Steps (Windows)
@@ -56,7 +57,8 @@ pip install -r requirements.txt
 python -m spacy download en_core_web_sm
 Run the Chatbot:
 python app.py
-📂 Files Included
+
+**📂 Files Included**
 app.py – Main chatbot script
 preprocessing.py – Input cleaner
 ner_module.py – Extracts symptoms
@@ -67,7 +69,7 @@ README.md – This file
 🎞 Presentation Slides
 You can view the project presentation here: Intelligent_Symptom_Interpretation_System.pptx
 
-🧠 Future Improvements
+**🧠 Future Improvements**
 Real medical NER using SciSpacy or Med7
 Use SNOMED or ICD-10 for advanced ontology mapping
 Deep learning model for better context understanding
